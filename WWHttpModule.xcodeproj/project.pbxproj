@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2F2E8A1D926B21004EC78F /* WWHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F2E881D926B21004EC78F /* WWHttpClient.m */; };
+		2F2F2E8C1D926BDF004EC78F /* WWHttpModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F878E611D92676000B17864 /* WWHttpModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2F2E8D1D926BEB004EC78F /* WWHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2F2E871D926B21004EC78F /* WWHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2F2E901D926C87004EC78F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F2E8F1D926C87004EC78F /* Foundation.framework */; };
+		2F2F2E921D926C8E004EC78F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F2E911D926C8E004EC78F /* UIKit.framework */; };
 		2F878E681D92676000B17864 /* WWHttpModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F878E5E1D92676000B17864 /* WWHttpModule.framework */; };
 		2F878E6D1D92676000B17864 /* WWHttpModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F878E6C1D92676000B17864 /* WWHttpModuleTests.m */; };
-		2F878E6F1D92676000B17864 /* WWHttpModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F878E611D92676000B17864 /* WWHttpModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2F2E871D926B21004EC78F /* WWHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWHttpClient.h; sourceTree = "<group>"; };
+		2F2F2E881D926B21004EC78F /* WWHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHttpClient.m; sourceTree = "<group>"; };
+		2F2F2E8F1D926C87004EC78F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F2F2E911D926C8E004EC78F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F878E5E1D92676000B17864 /* WWHttpModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWHttpModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F878E611D92676000B17864 /* WWHttpModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWHttpModule.h; sourceTree = "<group>"; };
 		2F878E621D92676000B17864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2F2E921D926C8E004EC78F /* UIKit.framework in Frameworks */,
+				2F2F2E901D926C87004EC78F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F2F2E8E1D926C87004EC78F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F2E911D926C8E004EC78F /* UIKit.framework */,
+				2F2F2E8F1D926C87004EC78F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F878E541D92676000B17864 = {
 			isa = PBXGroup;
 			children = (
 				2F878E601D92676000B17864 /* WWHttpModule */,
 				2F878E6B1D92676000B17864 /* WWHttpModuleTests */,
 				2F878E5F1D92676000B17864 /* Products */,
+				2F2F2E8E1D926C87004EC78F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +93,8 @@
 			children = (
 				2F878E611D92676000B17864 /* WWHttpModule.h */,
 				2F878E621D92676000B17864 /* Info.plist */,
+				2F2F2E871D926B21004EC78F /* WWHttpClient.h */,
+				2F2F2E881D926B21004EC78F /* WWHttpClient.m */,
 			);
 			path = WWHttpModule;
 			sourceTree = "<group>";
@@ -93,7 +115,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F878E6F1D92676000B17864 /* WWHttpModule.h in Headers */,
+				2F2F2E8C1D926BDF004EC78F /* WWHttpModule.h in Headers */,
+				2F2F2E8D1D926BEB004EC78F /* WWHttpClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2F2E8A1D926B21004EC78F /* WWHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +410,7 @@
 				2F878E741D92676000B17864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F878E751D92676000B17864 /* Build configuration list for PBXNativeTarget "WWHttpModuleTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +419,7 @@
 				2F878E771D92676000B17864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
