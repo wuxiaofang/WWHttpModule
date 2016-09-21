@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WWHttpClient.h"
+#import "WWParser.h"
 
 //! Project version number for WWHttpModule.
 FOUNDATION_EXPORT double WWHttpModuleVersionNumber;
