@@ -12,6 +12,8 @@
 		2F2F2E8D1D926BEB004EC78F /* WWHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2F2E871D926B21004EC78F /* WWHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F2F2E901D926C87004EC78F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F2E8F1D926C87004EC78F /* Foundation.framework */; };
 		2F2F2E921D926C8E004EC78F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F2E911D926C8E004EC78F /* UIKit.framework */; };
+		2F58F6E61D92726D00E77AFA /* WWParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F58F6E41D92726D00E77AFA /* WWParser.h */; };
+		2F58F6E71D92726D00E77AFA /* WWParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F58F6E51D92726D00E77AFA /* WWParser.m */; };
 		2F878E681D92676000B17864 /* WWHttpModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F878E5E1D92676000B17864 /* WWHttpModule.framework */; };
 		2F878E6D1D92676000B17864 /* WWHttpModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F878E6C1D92676000B17864 /* WWHttpModuleTests.m */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		2F2F2E881D926B21004EC78F /* WWHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHttpClient.m; sourceTree = "<group>"; };
 		2F2F2E8F1D926C87004EC78F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F2F2E911D926C8E004EC78F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F58F6E41D92726D00E77AFA /* WWParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWParser.h; sourceTree = "<group>"; };
+		2F58F6E51D92726D00E77AFA /* WWParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWParser.m; sourceTree = "<group>"; };
 		2F878E5E1D92676000B17864 /* WWHttpModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWHttpModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F878E611D92676000B17864 /* WWHttpModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWHttpModule.h; sourceTree = "<group>"; };
 		2F878E621D92676000B17864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2F58F6E31D92726100E77AFA /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				2F58F6E41D92726D00E77AFA /* WWParser.h */,
+				2F58F6E51D92726D00E77AFA /* WWParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		2F878E541D92676000B17864 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		2F878E601D92676000B17864 /* WWHttpModule */ = {
 			isa = PBXGroup;
 			children = (
+				2F58F6E31D92726100E77AFA /* Parser */,
 				2F878E611D92676000B17864 /* WWHttpModule.h */,
 				2F878E621D92676000B17864 /* Info.plist */,
 				2F2F2E871D926B21004EC78F /* WWHttpClient.h */,
@@ -116,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2F2E8C1D926BDF004EC78F /* WWHttpModule.h in Headers */,
+				2F58F6E61D92726D00E77AFA /* WWParser.h in Headers */,
 				2F2F2E8D1D926BEB004EC78F /* WWHttpClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F58F6E71D92726D00E77AFA /* WWParser.m in Sources */,
 				2F2F2E8A1D926B21004EC78F /* WWHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
